@@ -1,0 +1,206 @@
+.frame-phone {
+  position: relative;
+  width: 280px;
+  height: 585px;
+  background: #446087;
+  border-radius: 50.6px;
+  box-shadow: inset 2px 0 12px #446087;
+}
+
+.layer2 {
+  position: absolute;
+  width: calc(100% - 3%);
+  height: calc(100% - 2%);
+  background: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 46.6px;
+  box-shadow: -2px 0px 15px 1.5px #494949;
+  border: 1px solid black;
+}
+
+.screen {
+  position: absolute;
+  background: white;
+  width: calc(100% - 3%);
+  height: calc(100% - 2%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 40.6px;
+  overflow: hidden;
+}
+
+.stripe {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 4px;
+}
+
+.top {
+  top: 10%;
+}
+
+.bottom {
+  bottom: 10%;
+}
+
+.side-button {
+  position: absolute;
+  background: #102948;
+  width: 3px;
+}
+
+.mute {
+  height: 25px;
+  top: 75px;
+  left: -1px;
+  border-radius: 1.5px 0 0 1.5px;
+}
+
+.volume-up {
+  height: 50px;
+  top: 125px;
+  left: -1px;
+  border-radius: 1.5px 0 0 1.5px;
+}
+
+.volume-down {
+  height: 50px;
+  top: 190px;
+  left: -1px;
+  border-radius: 1.5px 0 0 1.5px;
+}
+
+.hold {
+  height: 75px;
+  top: 145px;
+  left: 99.5%;
+  border-radius: 0px 1.5px 1.5px 0px;
+}
+
+.port {
+  position: absolute;
+  background: white;
+  width: 30px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 0 0;
+}
+
+#background {
+  border-radius: 38.6px;
+  position: absolute;
+  object-fit: cover;
+  top: -1px;
+  width: 100%;
+  height: 100.5%;
+  filter: brightness(80%);
+}
+
+#logo {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-top: 100%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mask {
+  background: black;
+  height: 25px;
+  margin-left: 50%;
+  transform: translate(-50%, -1px);
+  border-radius: 0% 0% 20px 20px;
+}
+
+.left-pie {
+  position: absolute;
+  overflow: hidden;
+  height: 8px;
+  width: 8px;
+  left: -8px;
+  transform: rotate(90deg);
+}
+
+.left-pie::after {
+  content: " ";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  box-shadow: 0 0 0 8px black;
+  height: 200%;
+  width: 200%;
+  border-radius: 50%;
+}
+
+.right-pie {
+  position: absolute;
+  overflow: hidden;
+  height: 8px;
+  width: 8px;
+  right: -8px;
+  transform: rotate(0deg);
+}
+
+.right-pie::after {
+  content: " ";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  box-shadow: 0 0 0 8px black;
+  height: 200%;
+  width: 200%;
+  border-radius: 50%;
+}
+
+.speaker {
+  position: absolute;
+  height: 4px;
+  width: 35px;
+  background: #222222;
+  margin-top: 5px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.camera {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #222222;
+  margin-top: 3px;
+  margin-left: 70%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.lenz {
+  position: absolute;
+  background: blue;
+  -moz-box-shadow: inset 0 0 2px #0d1a53;
+  -webkit-box-shadow: inset 0 0 2px #0d1a53;
+  box-shadow: inset 0px 0 2px #0d1a53;
+  border-radius: 8px;
+}
+
+.left {
+  filter: brightness(70%);
+  width: 4px;
+  height: 4px;
+  margin: 1px 2px 0 0;
+}
+
+.right {
+  filter: brightness(50%);
+  width: 5px;
+  height: 5px;
+  left: 2px;
+  top: 1px;
+}
