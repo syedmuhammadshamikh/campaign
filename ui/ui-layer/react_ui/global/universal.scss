@@ -1,0 +1,64 @@
+@import "layout";
+
+// Create Campaign
+.create_campaign_slots {
+  padding: 16px 24px;
+  border-radius: var(--border_radius_large);
+  margin: 24px 0;
+  background: var(--ns-cm-white-color);
+  display: flex;
+  gap: 24px;
+  @media #{$mq-mobile-sm} {
+    gap: 18px;
+  }
+  align-items: center;
+  &:nth-child(01) {
+    margin-top: 0;
+  }
+  .MuiCheckbox-root {
+    padding: 0;
+  }
+  p {
+    @media #{$mq-mobile-sm} {
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden;
+    }
+  }
+}
+.icons {
+  width: 64px;
+  height: 64px;
+  @media #{$mq-mobile-sm} {
+    width: 45px;
+    height: 45px;
+    border-radius: var(--border_radius_medium);
+    .material-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  border-radius: var(--border_radius_large);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  &.blue {
+    background: linear-gradient(137deg, #a0b5fd 1%, #224bdb 97.33%);
+  }
+  &.purple {
+    background: linear-gradient(137deg, #f2cdff 5.82%, #9101c3 97.33%);
+  }
+  &.darkyellow {
+    background: linear-gradient(316deg, #a3780c 17.93%, #ffdd86 97.75%);
+  }
+  &.green {
+    background: linear-gradient(316deg, #0ca375 17.93%, #98f1d9 97.75%);
+  }
+}

@@ -1,0 +1,38 @@
+.MuiDialog-container {
+  @import "button";
+}
+
+.MuiDialog-root {
+  .MuiPaper-root {
+    border-radius: 16px;
+    .MuiDialogTitle-root {
+      @extend %paragraph_p;
+      font-size: var(--font_size20);
+      color: var(--ns-cm-base-font-color3);
+      font-weight: bold;
+      padding: 16px;
+      border-bottom: 1px solid var(--primary-border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &.heading_blue {
+        color: #0e53a8;
+      }
+      svg {
+        cursor: pointer;
+        color: var(--ns-cm-base-font-color2);
+      }
+    }
+    .MuiDialogContent-root {
+      padding: 16px;
+      border-bottom: 1px solid var(--primary-border-color);
+      .MuiTypography-p {
+        @extend %paragraph_p_16px;
+        color: var(--ns-cm-base-font-color3);
+        span {
+          color: #0e53a8;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "sass:math";
+
+/* Media Query */
+$mq-4k: "(min-width: 2201px) and (max-width: 4000px)";
+$mq-laptop: "(max-width: 1440.98px)";
+$mq-tablet-lg: "(max-width: 1199.98px)";
+$mq-tablet-md: "(max-width: 900.98px)";
+$mq-tablet-sm: "(max-width: 767.98px)";
+$mq-mobile-sm: "(max-width: 575.98px)";
+$mq-mobile-xs: "(max-width: 479.98px)";
+
+$baseWidth: 1920px;
+$scalingFactor: 1.25;
+$targetWidth: math.div($baseWidth, $scalingFactor);
+$mediaQuery125: "only screen and (max-width: #{$targetWidth})";

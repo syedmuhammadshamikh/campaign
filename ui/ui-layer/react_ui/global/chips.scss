@@ -1,0 +1,15 @@
+.MuiChip-root.MuiChip-filled {
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: var(--border_radius_small);
+  padding: 4px 8px;
+  .MuiChip-label {
+    @extend %paragraph_p_14px;
+    padding: 0px;
+    font-weight: 500;
+    color: #006bff;
+    line-height: normal;
+  }
+}

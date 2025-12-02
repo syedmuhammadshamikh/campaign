@@ -1,0 +1,103 @@
+.ns_table_style {
+  box-shadow: none !important;
+  table {
+    thead {
+      tr {
+        th {
+          @extend %paragraph_p;
+          background-color: var(--ns-cm-tertiary-color);
+          border: none;
+          font-weight: 500;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          .MuiTypography-p {
+            @extend %paragraph_p_16px;
+            font-weight: 500;
+            color: var(--ns-cm-base-font-color);
+          }
+          .actionsArea {
+            button {
+              @extend %paragraph_p_16px;
+              color: var(--ns-cm-link-color);
+              text-decoration: underline;
+              .MuiSvgIcon-root {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        &.MuiTableRow-hover {
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination_bottom_table {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+  margin-top: 16px;
+  @media #{$mq-tablet-lg} {
+    justify-content: space-between;
+  }
+  @media #{$mq-tablet-md} {
+    flex-direction: column;
+    align-items: self-start;
+  }
+  .right_Area_pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @media #{$mq-tablet-md} {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  .MuiTypography-root {
+    margin-bottom: 0px;
+    font-weight: normal;
+    color: var(--ns-cm-base-font-color3);
+  }
+  .MuiPagination-ul {
+    border: 1px solid var(--primary-border-color);
+    border-radius: var(--border_radius_small);
+    li {
+      border-right: 1px solid var(--primary-border-color);
+      height: 32px;
+      &:last-child {
+        border: none;
+      }
+      button {
+        border: none;
+        border-radius: 0px;
+        line-height: normal;
+        &.Mui-selected {
+          background: #e5f1ff;
+          color: #0e53a8;
+        }
+      }
+      .MuiPaginationItem-root {
+        margin: 0px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend %paragraph_p_14px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+    }
+  }
+  .MuiInputBase-root {
+    height: 32px;
+  }
+}

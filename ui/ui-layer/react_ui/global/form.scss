@@ -1,0 +1,32 @@
+@import "variables";
+@import "media-queries";
+
+// form elements
+.ns_formbox {
+  padding: 32px 24px;
+  border-radius: var(--border_radius_large);
+  margin: 0 0 24px;
+  background: var(--ns-cm-white-color);
+}
+.ns_field_style {
+  @extend %cst_input_component;
+}
+
+.ns_ddmenu_style {
+  .MuiPopover-paper {
+    border-radius: 16px;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0px 7px 12px 2px rgba(0, 0, 0, 0.1);
+    ul {
+      li {
+        padding: 8px 24px;
+        .MuiTypography-root {
+          @extend %paragraph_p_16px;
+        }
+        .MuiSvgIcon-root {
+          color: var(--ns-cm-primary-btn-bg);
+        }
+      }
+    }
+  }
+}

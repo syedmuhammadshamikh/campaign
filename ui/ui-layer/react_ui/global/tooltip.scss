@@ -1,0 +1,19 @@
+.MuiTooltip-popper {
+  @import "variables";
+
+  .MuiTooltip-tooltip {
+    background: rgba(25, 25, 25, 0.75);
+    padding: 16px;
+    border-radius: 16px;
+    text-transform: capitalize;
+    p {
+      @extend %paragraph_p_16px;
+      color: var(--ns-cm-white-color);
+    }
+    h6 {
+      @extend %paragraph_p_16px;
+      color: var(--ns-cm-white-color);
+      font-weight: 800;
+    }
+  }
+}

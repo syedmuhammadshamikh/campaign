@@ -1,0 +1,50 @@
+@import "variables.scss";
+@import "typography.scss";
+@import "fonts/font.scss";
+@import "universal.scss";
+@import "form.scss";
+@import "dropdown.scss";
+@import "components";
+@import "chips";
+@import "table";
+@import "drawer";
+@import "tooltip";
+@import "checkbox";
+@import "campaign_datagrid";
+
+html,
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  font-family: var(--ns-cm-font-family);
+}
+#root {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  font-family: var(--ns-cm-font-family);
+}
+
+.main_wrapper_app {
+  label {
+    @extend %cst_label;
+  }
+  h1 {
+    @extend %heading_h1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .MuiIconButton-root {
+      color: var(--ns-cm-base-font-color);
+    }
+  }
+  p {
+    @extend %paragraph_p;
+  }
+  @import "button";
+}

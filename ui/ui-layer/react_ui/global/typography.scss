@@ -1,0 +1,100 @@
+@import "variables.scss";
+@import "media-queries.scss";
+
+%heading_h1 {
+  font-size: var(--font_size24);
+  color: var(--ns-cm-base-font-color);
+  @media #{$mediaQuery125} {
+    font-size: calc(var(--font_size24) - 2px);
+  }
+  @media #{$mq-mobile-sm} {
+    font-size: calc(var(--font_size24) - 6px);
+  }
+  font-style: normal;
+  line-height: normal;
+}
+%heading_h3 {
+  font-size: var(--font_size18);
+  color: var(--ns-cm-base-font-color);
+  @media #{$mediaQuery125} {
+    font-size: calc(var(--font_size18) - 2px);
+  }
+  @media #{$mq-mobile-sm} {
+    font-size: calc(var(--font_size18) - 6px);
+  }
+  font-style: normal;
+  line-height: normal;
+}
+%font_20 {
+  font-size: var(--font_size20);
+  color: var(--ns-cm-base-font-color);
+  @media #{$mediaQuery125} {
+    font-size: calc(var(--font_size20) - 2px);
+  }
+  @media #{$mq-mobile-sm} {
+    font-size: calc(var(--font_size20) - 2px);
+  }
+  font-style: normal;
+  line-height: normal;
+  margin-top: 0;
+  strong {
+    font-weight: 800;
+  }
+}
+%paragraph_p {
+  font-size: var(--font_size18);
+  color: var(--ns-cm-base-font-color);
+  @media #{$mediaQuery125} {
+    font-size: calc(var(--font_size18) - 2px);
+  }
+  @media #{$mq-mobile-sm} {
+    font-size: calc(var(--font_size18) - 2px);
+  }
+  font-style: normal;
+  line-height: normal;
+  margin-top: 0;
+  strong {
+    font-weight: 800;
+  }
+}
+%paragraph_p_16px {
+  font-size: var(--font_size16);
+  color: var(--ns-cm-base-font-color2);
+  @media #{$mediaQuery125} {
+    font-size: calc(var(--font_size16) - 1px);
+  }
+  @media #{$mq-mobile-sm} {
+    font-size: calc(var(--font_size16) - 1px);
+  }
+  font-style: normal;
+  line-height: normal;
+  margin-top: 0;
+  strong {
+    font-weight: 800;
+  }
+}
+%paragraph_p_14px {
+  font-size: var(--font_size14);
+  color: var(--ns-cm-base-font-color2);
+  @media #{$mediaQuery125} {
+    font-size: calc(var(--font_size14) - 1px);
+  }
+  @media #{$mq-mobile-sm} {
+    font-size: calc(var(--font_size14) - 1px);
+  }
+  font-style: normal;
+  line-height: normal;
+  margin-top: 0;
+}
+
+%cst_label {
+  .MuiTypography-root {
+    display: flex;
+    @extend %paragraph_p_16px;
+    color: var(--ns-cm-base-font-color);
+    span {
+      margin-left: 5px;
+      font-weight: normal;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@import "variables";
+@import "media-queries";
+
+%ns_btn {
+  // font-size: calc(var(--font_size14) * 1px);
+  @extend %paragraph_p_16px;
+  // @media #{$mq-mobile-sm} {
+  //   font-size: calc(var(--font_size14) - 1px);
+  // }
+  font-style: normal;
+  line-height: normal;
+}
+
+.ns_primary_btn,
+.ns_secondary_btn,
+.ns_tertiary_btn,
+.ns_secondary_btn_noborder {
+  @extend %ns_btn;
+  padding: 10px 20px 11.5px 20px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  @media #{$mq-laptop} {
+    min-width: auto;
+  }
+  border-radius: var(--border_radius_medium);
+  box-shadow: none;
+  @media #{$mq-tablet-lg} {
+    min-width: auto;
+    padding: 8px 12px;
+  }
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+  }
+}
+.ns_primary_btn {
+  background: var(--ns-cm-primary-btn-bg);
+  border: 1px solid var(--ns-cm-primary-btn-bg);
+  color: var(--ns-cm-white-color);
+  &.Mui-disabled {
+    border-color: #6e9dd7;
+    color: #ccddf1;
+    background: #6e9dd7;
+  }
+  &:hover {
+    background: var(--ns-cm-primary-btn-hovercolor);
+  }
+}
+.ns_secondary_btn {
+  background: var(--ns-cm-white-color);
+  color: var(--ns-cm-base-font-color);
+  border: 1px solid var(--primary-border-color);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.03);
+  &:hover {
+    background: #ebf2f9;
+  }
+}
+.ns_secondary_btn_noborder {
+  background: var(--ns-cm-white-color);
+  color: var(--ns-cm-base-font-color2);
+  border: none;
+  box-shadow: none;
+  &:hover {
+    background: #ebf2f9;
+  }
+}
+.ns_tertiary_btn {
+  background: transparent;
+  color: var(--ns-cm-primary-btn-bg);
+  border: 1px solid transparent;
+  &:hover {
+    background: #ebf2f9;
+    border-color: #ebf2f9;
+  }
+}
+.ns_cancel_editing_btn {
+  @extend %ns_btn;
+  color: var(--ns-cm-primary-btn-bg);
+  box-shadow: none;
+  background: transparent;
+  border-radius: 36px;
+  padding: 10px 20px 11.5px 20px;
+  @media #{$mq-tablet-lg} {
+    width: 100%;
+  }
+  &:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+.ns_dotted-btn {
+  border: 1px solid var(--primary-border-color);
+  border-radius: var(--border_radius_medium);
+  color: #000;
+  background: #fff;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.03);
+}

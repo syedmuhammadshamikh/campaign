@@ -1,0 +1,207 @@
+.MuiStepper-root {
+  .MuiStepConnector-root {
+    margin-left: 20px;
+
+    @media (max-width: 899px) {
+      display: none;
+    }
+
+    .MuiStepConnector-line {
+      border-left: 3px solid #8792a3;
+      min-height: 60px;
+    }
+    &.Mui-active,
+    &.Mui-completed {
+      .MuiStepConnector-line {
+        border-color: #3aaf28;
+      }
+    }
+  }
+
+  .MuiStepLabel-labelContainer {
+    span {
+      @extend %heading_h3;
+      font-weight: 800;
+      color: #8694a4;
+      padding-left: 16px;
+
+      @media (max-width: 899px) {
+        padding: 10px 0 5px 0;
+      }
+    }
+
+    p {
+      @extend %paragraph_p_16px;
+      color: #6e6e6e;
+    }
+  }
+
+  .MuiStep-root {
+    .MuiStepLabel-root {
+      padding-top: 20px;
+      padding-bottom: 0;
+
+      @media (max-width: 899px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+      }
+
+      svg {
+        width: 40px;
+        height: 40px;
+        color: #8694a4;
+      }
+
+      .Mui-active {
+        color: var(--ns-cm-primary-btn-bg);
+
+        svg {
+          fill: var(--ns-cm-primary-btn-bg);
+        }
+      }
+
+      .MuiStepLabel-iconContainer {
+        width: 40px;
+        height: 40px;
+        background: #8694a4;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 0;
+
+        img {
+          @media #{$mq-tablet-lg} {
+            height: 20px;
+            width: 20px;
+          }
+        }
+
+        @media (max-width: 899px) {
+          width: 32px;
+          height: 32px;
+        }
+
+        .check-completed-icon {
+          svg {
+            color: #3aaf28;
+            position: absolute;
+            bottom: -8px;
+            right: -6px;
+            background-color: #fff;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            padding: 2px;
+          }
+        }
+
+        &.Mui-active {
+          background: var(--ns-cm-primary-btn-bg);
+        }
+      }
+    }
+
+    p {
+      @extend %paragraph_p_16px;
+      color: #6e6e6e;
+      // padding-left: 50px;
+      padding-left: 56px;
+      margin: 0;
+      // padding-right: 60px;
+
+      @media (max-width: 899px) {
+        padding-left: 0;
+      }
+    }
+
+    .step-description {
+      overflow: hidden;
+      width: 260px;
+
+      @media (max-width: 899px) {
+        width: auto;
+        text-align: center;
+
+        p {
+          line-height: 1.25;
+
+          @media (max-width: 575px) {
+            font-size: calc(var(--font_size14) - 2px);
+            line-height: 1.1;
+          }
+        }
+      }
+
+      @media #{$mq-tablet-lg} {
+        width: 230px;
+      }
+      @media #{$mq-tablet-md} {
+        width: 170px;
+      }
+    }
+  }
+}
+
+.MuiStepper-root {
+  @media (max-width: 899px) {
+    align-items: flex-start;
+  }
+
+  .MuiStep-root {
+    min-height: 82px;
+
+    @media (max-width: 899px) {
+      width: 33.33%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 50%;
+        height: 2px;
+        width: 100%;
+        background: #8694a4;
+      }
+
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+
+      &.Mui-completed {
+        &::before {
+          background-color: #3aaf28;
+        }
+      }
+    }
+
+    @media (max-width: 575px) {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    &.step-completed {
+      .MuiStepLabel-root {
+        .MuiStepLabel-iconContainer {
+          background-color: #3aaf28;
+        }
+
+        .MuiStepLabel-labelContainer {
+          span {
+            color: var(--ns-cm-base-font-color);
+          }
+        }
+      }
+    }
+  }
+}

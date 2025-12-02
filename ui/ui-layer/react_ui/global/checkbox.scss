@@ -1,0 +1,8 @@
+@import "variables.scss";
+
+.MuiButtonBase-root.MuiCheckbox-root {
+  color: var(--primary-border-color);
+  &.Mui-checked {
+    color: var(--ns-cm-primary-btn-bg);
+  }
+}

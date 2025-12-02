@@ -1,0 +1,34 @@
+// Custom Root Variables
+@use "sass:math";
+:root {
+  --ns-cm-white-color: #fff;
+  --ns-cm-primary-color: #356dad;
+  --ns-cm-primary-hovercolor: #2b598d;
+  --ns-cm-secondary-color: #42566c;
+  --ns-cm-tertiary-color: #eff6ff;
+  --ns-cm-link-color: #006bff;
+  --ns-cm-base-font-color: #191919;
+  --ns-cm-base-font-color2: #6e6e6e;
+  --ns-cm-base-font-color3: #43425d;
+
+  --ns-cm-font-family: "Avenir", sans-serif;
+
+  //Button
+  --ns-cm-primary-btn-bg: #006bff;
+  --ns-cm-primary-btn-hovercolor: #006bff;
+
+  //Fonts Size Variables
+  --font_size14: 14px;
+  --font_size16: 16px;
+  --font_size18: 18px;
+  --font_size20: 20px;
+  --font_size24: 24px;
+
+  // Border color
+  --primary-border-color: #d6d6d6;
+
+  // Border Radius Var
+  --border_radius_small: 4px;
+  --border_radius_medium: 8px;
+  --border_radius_large: 16px;
+}

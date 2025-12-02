@@ -1,0 +1,71 @@
+@import "variables.scss";
+@import "media-queries.scss";
+
+%cst_input_component {
+  .MuiAutocomplete-root {
+    .MuiChip-root {
+      border-radius: var(--border_radius_small);
+      background: #edf4fd;
+      color: #0f73ff;
+      font-weight: bold;
+      .MuiChip-deleteIcon {
+        color: #0f73ff;
+        margin: 0px;
+        &:hover {
+          color: #0f73ff;
+        }
+      }
+    }
+  }
+  .MuiTypography-root {
+    margin-bottom: 8px;
+    display: flex;
+    @extend %paragraph_p_16px;
+    color: var(--ns-cm-base-font-color);
+    font-weight: bold;
+    span {
+      margin-left: 5px;
+      font-weight: normal;
+    }
+  }
+  .MuiInputBase-root {
+    @extend %paragraph_p_16px;
+    color: var(--ns-cm-base-font-color);
+    background-color: var(--ns-cm-white-color);
+    border-radius: 6px;
+    overflow: hidden;
+    padding-right: 0px;
+    &.Mui-focused {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: var(--ns-cm-primary-color) !important;
+        border-width: 1px;
+      }
+    }
+    .MuiOutlinedInput-notchedOutline {
+      border-color: #d6d6d6;
+      @extend %paragraph_p_16px;
+      border-radius: 6px;
+    }
+    &:hover {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: #a1a1a1;
+        opacity: 1;
+      }
+    }
+    .MuiInputAdornment-root {
+      &.MuiInputAdornment-positionEnd {
+        background: #f7f7f7;
+        min-height: 40px;
+        border-left: 1px solid #d6d6d6;
+        padding: 0px 8px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .Mui-error {
+    padding: 0;
+    margin: 3px 0;
+    font-size: 14px;
+  }
+}
